@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Krishna Fitness</title>
+    <link rel="stylesheet" href="styling/general-stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><h1 class="text-light">Krishna Media</h1></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="fitness.html">Fitness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="dankmeme.html">Dank-Memes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="astro.html">Space</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="cooking.html">Cooking</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Generate Quote Modal-->
+    <button type="button" id="quotebutton" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      >Click here for a motivational quote!<
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Here is a special motivational quote for you!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="quoteoutput">
+          
+          </div>
+          <div class="modal-footer">
+            <!-- remove one of the buttons if the function becomes too complex to work -->
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- Slider section -->
+    <div id="carouselExampleCaptions" class="carousel slide mb-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/fitness-media/olive-fitness.jpg" class="d-block w-100" alt="Image welcoming you to the fitness section">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to the Fitness section</h5>
+            <p><b>The place</b> to get all your <b>fitness</b> information</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="media/fitness-media/brisk-walk-fitness.jpg" class="d-block w-100" alt="Image of two people walking">
+        </div>
+        <div class="carousel-item">
+          <img src="media/fitness-media/exercise-med-fitness.jpg" class="d-block w-100" alt="Image of a person exercising up the staircase">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+  
+
+    <!-- News Articles -->
+    <div class="container">
+      <!--Section: First News of the day-->
+      <article class="border-bottom pb-4 mb-5">
+        <div class="row gx-5">
+          <div class="col-md-6 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="media/fitness-media/olive-fitness.jpg" class="img-fluid" alt="Image of olives"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">HOT NEWS</span>
+            <h4><strong>Olive oil by-product could aid exercise</strong></h4>
+            <p class="text-muted">
+                Mar. 8, 2023 — New research has found that olive fruit water, a by-product typically thrown away during olive oil production, could have exercise benefits. The study tested olive fruit water during exercise and found it had positive effects on several key markers of running performance.
+            </p>
+            <a href="https://www.sciencedaily.com/releases/2023/03/230308112204.htm"><button type="button" class="btn btn-primary">Check out the original article</button></a>
+          </div>
+        </div>
+      </article>
+
+      <!--Section: 2nd News of the day-->
+      <article class="border-bottom pb-4 mb-5">
+        <div class="row gx-5">
+          <div class="col-md-6 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="media/fitness-media/brisk-walk-fitness.jpg" class="img-fluid" alt="Image of two people walking"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <span class="badge bg-warning px-2 py-1 shadow-1-strong mb-3">Lukewarm News</span>
+            <h4><strong>11 minutes of brisk walking a day could prevent early death: Study</strong></h4>
+            <p class="text-muted">
+                Mar. 1, 2023 - LONDON - One in 10 early deaths could be prevented if everyone engaged in a small amount of daily exercise, such as a brisk 11-minute walk, a large study said on Wednesday. Physical activity is known to reduce the risk of heart disease, cancer and other leading causes of death, but exactly how much is needed to have an impact has been unclear.
+            </p>
+            <a href="https://www.straitstimes.com/world/europe/11-minutes-of-brisk-walking-a-day-could-prevent-early-death-study"><button type="button" class="btn btn-primary">Check out the original article</button></a>
+          </div>
+        </div>
+      </article>
+
+      <!--Section: 3rd News of the day-->
+      <article class="border-bottom pb-4 mb-5">
+        <div class="row gx-5">
+          <div class="col-md-6 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="media/fitness-media/exercise-med-fitness.jpg" class="img-fluid" alt="Image of a person exercising up the staircase"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <span class="badge bg-success px-2 py-1 shadow-1-strong mb-3">Nice News</span>
+            <h4><strong>Exercise more effective than medicines to manage mental health</strong></h4>
+            <p class="text-muted">
+            February 23, 2023 - Researchers are calling for exercise to be a mainstay approach for managing depression as a new study shows that physical activity is 1.5 times more effective than counseling or the leading medications.
+            </p>
+            <a href="https://www.sciencedaily.com/releases/2023/02/230223193417.htm"><button type="button" class="btn btn-primary">Check out the original article</button></a>
+          </div>
+        </div>
+      </article>
+
+      <!--Section: 4th News of the day-->
+      <article class="border-bottom pb-4 mb-5">
+        <div class="row gx-5">
+          <div class="col-md-6 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="media/fitness-media/bike-desks-fitness.jpg" class="img-fluid" alt="Image of a classroom full of desks with bike pedal attachments"/>
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <span class="badge bg-info px-2 py-1 shadow-1-strong mb-3">Standard News</span>
+            <h4><strong>Bike desks help Mexican students burn calories as they learn at school</strong></h4>
+            <p class="text-muted">
+                Feb. 9, 2023 - SAN NICOLAS DE LOS GARZA, Mexico - Rows of sleek new school desks equipped with bike pedals are allowing students in Mexico to power through their class work while cranking out some light exercise, burning off calories in a country known for its alarming obesity rates.
+            </p>
+            <a href="https://www.straitstimes.com/world/bike-desks-help-mexican-students-learn-while-burning-calories"><button type="button" class="btn btn-primary">Check out the original article</button></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer-dark">
+      <footer class="mt-auto">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Fun facts about Me</h3>
+                      <ul>
+                        <li><a href="#">Interested in front-end development and A.I.</a></li>
+                        <li><a href="#">Used to be a medic</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3>Interests</h3>
+                      <ul>
+                          <li><a href="#">Gains through fitness</a></li>
+                          <li><a href="#">Spicy Memes</a></li>
+                          <li><a href="#">Outer Space</a></li>
+                          <li><a href="#">Delicious Food</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h3>Krishna Media</h3>
+                      <p>Krishna Media is a psuedo media company that compiles information on my interests</p>
+                  </div>
+              </div>
+              <p class="copyright">lezgooo © 2023</p>
+          </div>
+      </footer>
+    </div>
+
+    
+    <!-- bootstrap js CDN links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
